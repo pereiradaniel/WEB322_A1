@@ -1,13 +1,21 @@
-// Daniel Pereira 2021
-// WEB322 A1
-
+/*********************************************************************************
+*  WEB322 – Assignment 1
+*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  
+*  No part of this assignment has been copied manually or electronically from any other source
+*  (including web sites) or distributed to other students.
+* 
+*  Name: Daniel Pereira  Student ID: 037747078  Date: 22 Jan 2021
+*
+*  Online (Heroku) URL: https://salty-fortress-51630.herokuapp.com/
+*
+********************************************************************************/ 
 var HTTP_PORT = process.env.port || 8080;
 var express = require("express");
 var app = express();
 
 // setup a 'route' to listen on the default url path
 app.get("/", (req, res) => {
-    res.send("Hello World!");
+    res.send("Daniel Pereira - 037747078");
 });
 
 // setup http server to listen on HTTP_PORT
