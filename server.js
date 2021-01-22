@@ -9,7 +9,7 @@
 *  Online (Heroku) URL: https://pure-mountain-17983.herokuapp.com
 *
 ********************************************************************************/ 
-// var HTTP_PORT = process.env.port || 5000;
+var HTTP_PORT = process.env.port || 8080;
 var express = require("express");
 var app = express();
 
@@ -19,4 +19,4 @@ app.get("/", (req, res) => {
 });
 
 // setup http server to listen on HTTP_PORT
-app.listen(process.env.port || 5000);
+app.listen(HTTP_PORT);
